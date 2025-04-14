@@ -1,0 +1,117 @@
+/* Estilos generales del cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    /* Fuente sin serifa para mejor legibilidad */
+    display: flex;
+    /* Usar flexbox para centrar la calculadora */
+    justify-content: center;
+    /* Centrar horizontalmente */
+    align-items: center;
+    /* Centrar verticalmente */
+    height: 100vh;
+    /* Altura al 100% de la ventana */
+    margin: 0;
+    /* Eliminar márgenes predeterminados */
+    background-color: #f5f5f5;
+    /* Color de fondo gris claro */
+}
+
+/* Contenedor principal de la calculadora */
+.calculadora {
+    background-color: #333;
+    /* Fondo oscuro para la calculadora */
+    border-radius: 10px;
+    /* Esquinas redondeadas */
+    padding: 20px;
+    /* Espacio interno */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    /* Sombra para efecto 3D */
+    width: 300px;
+    /* Ancho fijo de la calculadora */
+}
+
+/* Estilo para la pantalla donde se muestran los números */
+.pantalla {
+    background-color: #eee;
+    /* Fondo gris claro para la pantalla */
+    border-radius: 5px;
+    /* Esquinas redondeadas */
+    padding: 10px;
+    /* Espacio interno */
+    margin-bottom: 15px;
+    /* Espacio entre la pantalla y los botones */
+    text-align: right;
+    /* Alinear el texto a la derecha */
+    font-size: 24px;
+    /* Tamaño de fuente grande */
+    height: 40px;
+    /* Altura fija */
+    overflow: hidden;
+    /* Ocultar contenido que exceda el tamaño */
+}
+
+/* Contenedor de los botones usando grid para ordenarlos */
+.botones {
+    display: grid;
+    /* Usar sistema de grid para organizar botones */
+    grid-template-columns: repeat(4, 1fr);
+    /* 4 columnas de mismo tamaño */
+    gap: 10px;
+    /* Espacio entre botones */
+}
+
+/* Estilo general para todos los botones */
+button {
+    padding: 15px;
+    /* Espacio interno */
+    font-size: 18px;
+    /* Tamaño de fuente */
+    border: none;
+    /* Sin bordes */
+    border-radius: 5px;
+    /* Esquinas redondeadas */
+    cursor: pointer;
+    /* Cursor tipo mano al pasar sobre botones */
+    transition: background-color 0.2s;
+    /* Transición suave para efectos hover */
+}
+
+/* Efecto al pasar el cursor sobre los botones */
+button:hover {
+    opacity: 0.8;
+    /* Reducir opacidad para efecto hover */
+}
+
+/* Estilo específico para botones de números */
+.numero {
+    background-color: #555;
+    /* Gris oscuro para botones de números */
+    color: white;
+    /* Texto blanco */
+}
+
+/* Estilo específico para botones de operadores */
+.operador {
+    background-color: #ff9500;
+    /* Naranja para botones de operadores */
+    color: white;
+    /* Texto blanco */
+}
+
+/* Estilo específico para el botón igual */
+.igual {
+    background-color: #4CAF50;
+    /* Verde para botón igual */
+    color: white;
+    /* Texto blanco */
+    grid-row: span 2;
+    /* Hacer que ocupe dos filas en el grid */
+}
+
+/* Estilo específico para el botón de limpiar */
+.limpiar {
+    background-color: #f44336;
+    /* Rojo para botón limpiar */
+    color: white;
+    /* Texto blanco */
+}
